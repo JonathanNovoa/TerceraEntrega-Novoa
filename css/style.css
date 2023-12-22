@@ -1,0 +1,250 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+body {
+	background-color: rgb(228, 220, 220);
+}
+.header-inicio {
+	background-color: rgb(23, 135, 220);
+	width: 100%;
+}
+
+.contenedor-header img {
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	padding: 1rem;
+}
+.contenedor-header{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+}
+/* .contenedor-header h2{
+	display: flex;
+	flex-direction: column;
+} */
+/* .contenedor-header nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 35px;
+	padding-left: 5%;
+	padding-right: 5%;
+	font-weight: bold;
+	float: right;
+} */
+/* nav ul {
+	text-align: center;
+  } */
+.contenedor-header ul li {
+	display: inline-block;
+	padding: 0px 20px;
+}
+
+.contenedor-header a {
+	color: white;
+	text-decoration: none;
+}
+
+.portada-imagen .portada-d {
+	height: 300px;
+	background-image: url("../image/portada2.jpg");
+	background-size: cover;
+}
+
+.portada-imagen h1 {
+	color: green;
+	font-size: 80px;
+	text-align: center;
+	/* align-items: center; */
+}
+
+.productos {
+	align-items: center;
+}
+
+h2 {
+	color: black;
+	text-align: center;
+    padding: 1rem;
+}
+
+/* --------carrusel de imagenes con tarjetas ofertas -------------------*/
+.cardofertas-contenedor-index{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 1rem;
+	
+}
+.ofertas-index h2 {
+	color: red;
+	text-align: center;
+}
+.ofertas-index{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.cardofertas-index {
+	margin: 5px 10px;
+	box-shadow: 0 4px 8px 0 grey, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 400px;
+	padding-top: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
+	flex-grow: 1;
+}
+
+.cardofertas-foto img {
+	width: 100%;
+	height: auto;
+
+}
+
+.cardofertas-foto:hover {
+	border: 5px solid red;
+	transform: rotate(2deg);
+}
+
+.contenido-cardofertas {
+	text-align: center;
+	text-shadow: 1px 1px 1px rgb(75, 73, 73);
+	padding: 10px;
+
+}
+
+
+/* --------carrusel de imagenes con tarjetas productos más vendidos -------------------*/
+.cardvendidos-contenedor-index{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 1rem;
+}
+
+.vendidos-index h2 {
+	color: green;
+	text-align: center;
+}
+
+.cardvendidos-index {
+	margin: 5px 10px;
+	box-shadow: 0 4px 8px 0 grey, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 400px;
+	padding-top: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
+	flex-grow: 1;
+}
+
+.cardvendidos-foto img {
+	width: 100%;
+	height: auto;
+
+}
+
+.cardvendidos-foto:hover {
+	border: 5px solid green;
+	transform: rotate(-2deg);
+}
+
+.contenido-cardvendidos {
+	text-align: center;
+	text-shadow: 1px 1px 1px rgb(75, 73, 73);
+	padding: 10px;
+
+}
+
+
+/* -------------------tarjetas de produtos --------------------------------------*/
+.card-contenedor-index{
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	align-content: stretch;
+	justify-content: space-around;
+	padding: 1rem;
+}
+
+.card {
+	margin: 15px 10px;
+	box-shadow: 0 4px 8px 0 grey, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	justify-content: space-between;
+	width: 400px;
+	padding-top: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.card-foto img {
+	width: 100%;
+	height: auto;
+
+}
+
+.card-foto:hover {
+	border: 1px solid black;
+	transform: scale(1.15);
+}
+
+.contenido-card {
+	text-align: center;
+	text-shadow: 1px 1px 1px rgb(75, 73, 73);
+	padding: 10px;
+
+}
+
+#footer {
+	position: relative;
+	bottom: 0;
+}
+
+.contenedor-footer {
+	background-color: grey;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.contenedor-footer img {
+	width: 300px;
+	height: 200px;
+	margin: 5px 10px;
+	padding: 10px;
+
+}
+
+.contenedor-footer .menu-footer {
+	padding-top: 50px;
+	margin: 5px 10px;
+}
+
+.contenedor-footer .suscrip {
+	padding-top: 100px;
+	margin: 5px 10px;
+}
+
+.contenedor-footer p {
+	padding-top: 16%;
+	text-align: center;
+	margin: 5px 10px;
+}
+
+.contenedor-footer .logos-redes img {
+	padding-top: 46%;
+	margin: 5px 10px;
+	width: 10%;
+	height: 10%;
+
+}
