@@ -4,66 +4,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <title>Nosotros</title>
 </head>
 
 <body>
-    <div class="header-inicio">
-        <header>
-            <section class="contenedor-header">
-                <img src="../image/logo.jpg" alt="logo empresa de ropa de segunda mano">
-                <nav>
-                    <ul class="menu">
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="./ofertas.html">Ofertas</a></li>
-                        <li><a href="./comprar.html">Comprar</a></li>
-                        <li><a href="./nosotros.html">Nosotros</a></li>
-                        <li><a href="./contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
-            </section>
-        </header>
-    </div>
+    <header>
+        <!-- <div class="header"> class="header-inicio" -->
+        <section class="banner"> <!-- class="contenedor-header"> -->
+            <img class="banner__imagen" src="../image/logo.jpg" alt="logo empresa de ropa de segunda mano">
+            <nav>
+                <ul class="banner__menu"> <!-- class="menu" -->
+                    <li class="banner__lista"><a class="banner__link" href="../index.html">Home</a></li>
+                    <li class="banner__lista"><a class="banner__link" href="../pages/ofertas.html">Ofertas</a></li>
+                    <li class="banner__lista"><a class="banner__link" href="../pages/comprar.html">Comprar</a></li>
+                    <li class="banner__lista"><a class="banner__link" href="../pages/nosotros.html">Nosotros</a></li>
+                    <li class="banner__lista"><a class="banner__link" href="../pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </section>
+        <!-- </div> -->
+    </header>
 
     <main>
-        <section class="portada-imagen">
+
+        <section class="portada"> <!-- class="portada-imagen"  -->
             <!-- <img src="./image/portada2.jpg" alt="imagen portada de venta de ropa usada"> -->
-            <div class="portada-d">
-                <h1>Reduce - Reuce - Recycle</h1>
+            <div class="portada__imagen"> <!--class="portada-d"-->
+                <h1 class="portada__titulo">Reduce - Reuce - Recycle</h1>
             </div>
         </section>
+        <!-- Comienzo tarjeta de imagenes con ofertas -->
     </main>
     <!-- ---------------------------------------------------------------------------------------- -->
 
-    <section class="nosotros-index">
-        <article>
-            <h2>NOSOTROS</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ipsa ex, odio tempora temporibus
-                consectetur exercitationem corporis mollitia aut rem voluptatibus accusantium, sequi facere, voluptatem
-                repellat expedita iste ea! Animi?
+    <section class="nosotros">
+        <h2 class="nosotros__titulo">NOSOTROS</h2>
+        <article class="nosotros-contenedor">
+            <p class="nosotros-contenedor__descripcion">
+                "RetroThreads es tu destino de estilo vintage, destacándose en el mundo de la moda en línea como un faro
+                de autenticidad y atemporalidad. Nuestra historia comienza con la visión de un equipo apasionado
+                comprometido con la moda y la sostenibilidad. Lan­zamos nuestra plataforma con la misión de redefinir la
+                moda de segunda mano, buscando tesoros únicos en armarios de todo el mundo, desde prendas nostálgicas de
+                los años 80 hasta los clásicos de los 90.
+
+                Nuestra interfaz evoca la esencia del pasado con una experiencia de usuario moderna. Enfocados en la
+                sostenibilidad, creemos que la moda de segunda mano es estilosa y poderosa para reducir el impacto
+                ambiental. Hemos construido una comunidad apasionada de amantes de la moda vintage, donde cada prenda
+                cuenta una historia única. RetroThreads no es solo una tienda en línea, es un destino para quienes
+                buscan conectar con el pasado a través de la moda. Únete a nosotros en este viaje donde cada clic revela
+                un nuevo capítulo en la historia de la moda de segunda mano. ¡Descubre tu estilo único con RetroThreads
+                hoy!"
+
             </p>
-            <img src="../image/prueba.png" float:right alt="">
+            <img class="nosotros-contenedor__imagen" src="../image/img-nosotros/nosotros.jpg" alt="">
         </article>
     </section>
-    <section class="mision-index">
-        <article>
-            <h2>MISION</h2>
-            <img src="../image/prueba.png"" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, excepturi. Laborum, aspernatur beatae
-                voluptatum provident culpa, natus illum incidunt ad debitis consequatur earum officiis repellat maxime
-                deleniti quo! Voluptatibus, provident!
+    <section class="mision">
+        <h2 class="mision__titulo">MISION</h2>
+        <article class="mision-contenedor">
+            <img class="mision-contenedor__imagen" src="../image/img-nosotros/mision.jpg" alt="imagen ropa vintage en la tienda RetroThreads">
+            <p class="mision-contenedor__descripcion">En RetroThreads, nos comprometemos a ser el epicentro global de la moda de segunda mano, proporcionando
+                a nuestros clientes acceso a prendas auténticas y atemporales que no solo cuentan historias, sino que
+                también fomentan un estilo de vida sostenible. Nuestra misión es ser pioneros en la transformación de
+                la industria textil, redefiniendo la manera en que las personas perciben y consumen la moda. Trabajamos
+                incansablemente para rescatar y compartir tesoros vintage, brindando a nuestros clientes una experiencia
+                única y contribuyendo positivamente al medio ambiente.
             </p>
         </article>
     </section>
-    <section>
-        <article>
-            <h2>VISION</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, eaque assumenda! Laboriosam
-                reprehenderit, ipsam dolore ad voluptatum rem explicabo suscipit quisquam eius aperiam unde ullam quia
-                soluta possimus doloribus odit?
+    <section class="vision">
+        <h2 class="vision__titulo">VISION</h2>
+        <article class="vision-contenedor">
+            <p class="vision-contenedor__descripcion">Nos visualizamos como un faro de inspiración para una comunidad global comprometida con la moda
+                consciente.
+                En RetroThreads, aspiramos a ser líderes en la revolución de la moda de segunda mano, creando un espacio
+                en línea donde cada prenda cuente una historia y refleje los valores de sostenibilidad. Buscamos influir
+                en la percepción general de la moda, promoviendo la idea de que la autenticidad y la sostenibilidad son
+                intrínsecas a un estilo de vida moderno y elegante. A medida que crecemos, nuestro objetivo es ser una
+                fuerza impulsora para el cambio en la industria, inspirando a otros a unirse a nosotros en la búsqueda
+                de un mundo donde la moda sea sinónimo de historia, calidad y responsabilidad ambiental.
             </p>
-            <img src="../image/prueba.png"" alt="">
+            <img class="vision-contenedor__imagen" src="../image/img-nosotros/vision.jpg" alt="">
         </article>
     </section>
 
@@ -71,40 +96,39 @@
     <!-- Footer de sistio web -->
     <footer>
 
-        <div class="contenedor-footer">
-            <div class="logo-footer">
-                <img src="../image/portada.jpg" alt="Logo Pagina Ropa Usada-Recicla">
-            </div>
-            <div class="menu-footer">
-                <nav>
-                    <ul>
-                        <li>Home</li>
-                        <li>Ofertas</li>
-                        <li>Comprar</li>
-                        <li>Nosotros</li>
-                        <li>Contacto</li>
+        <div class="footer"><!--contenedor-footer-->
+
+            <div class="footer-contenedor"><!--class="menu-footer-->
+                <img class="footer-contenedor__logo" src="../image/portada.jpg"
+                    alt="Logo Pagina Ropa Usada-Recicla"><!--class="logo-footer"-->
+                <nav class="footer-contenedor__menu">
+                    <ul class="footer-contenedor__ul">
+                        <li class="footer-contenedor__lista">Home</li>
+                        <li class="footer-contenedor__lista">Ofertas</li>
+                        <li class="footer-contenedor__lista">Comprar</li>
+                        <li class="footer-contenedor__lista">Nosotros</li>
+                        <li class="footer-contenedor__lista">Contacto</li>
                     </ul>
                 </nav>
+                <div class="footer-contenedor__suscrip"><!--class="suscrip"-->
+                    <label class="footer-contenedor__etiqueta" for="email-suscrip">Email</label><br>
+                    <input class="footer-contenedor__email" type="email" id="email-suscrip">
+                    <input class="footer-contenedor__boton" type="submit" value="Suscribete">
+                </div>
             </div>
+            <hr>
 
-            <br>
-            <p>Derechos Reservados 2023</p>
+
             <!-- Logo redes sociales -->
-            <div class="logos-redes">
-                <img src="../image/iconos/instagram-144.png" alt="Logo Instagram">
-                <img src="../image/iconos/facebook-144.png" alt="Logo Facebook">
-                <img src="../image/iconos/twitter-256.png" alt="Logo Twitter">
-            </div>
-            <div class="suscrip">
-                <label for="email-suscrip">Email</label><br>
-                <input type="email" id="email-suscrip">
-                <input type="submit" value="Suscribete">
-            </div>
 
+            <div class="contenedor-redes"><!--class="logos-redes"-->
+                <p class="contenedor-redes__parrafo">Derechos Reservados 2023</p>
+                <img class="contenedor-redes__imagen" src="../image/iconos/instagram-144.png" alt="Logo Instagram">
+                <img class="contenedor-redes__imagen" src="../image/iconos/facebook-144.png" alt="Logo Facebook">
+                <img class="contenedor-redes__imagen" src="../image/iconos/twitter-256.png" alt="Logo Twitter">
+            </div>
         </div>
-
     </footer>
-
 </body>
 
 </html>
