@@ -1,95 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <title>Contacto</title>
 </head>
+
 <body>
-    <div class="header-inicio">
-        <header>
-            <section class="contenedor-header">
-                <img src="../image/logo.jpg" alt="logo empresa de ropa de segunda mano">
-                <nav>
-                    <ul class="menu">
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="./ofertas.html">Ofertas</a></li>
-                        <li><a href="./comprar.html">Comprar</a></li>
-                        <li><a href="./nosotros.html">Nosotros</a></li>
-                        <li><a href="./contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
-            </section>
-        </header>
-    </div>
+    <header>
+        <!-- <div class="header"> class="header-inicio" -->
+        <section class="banner"> <!-- class="contenedor-header"> -->
+            <img class="banner__imagen" src="../image/logo.jpg" alt="logo empresa de ropa de segunda mano">
+            <nav>
+                <ul class="banner__menu"> <!-- class="menu" -->
+                    <li class="banner__lista"><a class="banner__link" href="../index.html">Home</a></li>
+                    <li class="banner__lista"><a class="banner__link" href="../pages/ofertas.html">Ofertas</a></li>
+                    <li class="banner__lista"><a class="banner__link" href="../pages/comprar.html">Comprar</a></li>
+                    <li class="banner__lista"><a class="banner__link" href="../pages/nosotros.html">Nosotros</a></li>
+                    <li class="banner__lista"><a class="banner__link" href="../pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </section>
+        <!-- </div> -->
+    </header>
 
     <main>
-        <section class="portada-imagen">
+
+        <section class="portada"> <!-- class="portada-imagen"  -->
             <!-- <img src="./image/portada2.jpg" alt="imagen portada de venta de ropa usada"> -->
-            <div class="portada-d">
-                <h1>Reduce - Reuce - Recycle</h1>
+            <div class="portada__imagen"> <!--class="portada-d"-->
+                <h1 class="portada__titulo">Reduce - Reuce - Recycle</h1>
             </div>
         </section>
+        <!-- Comienzo tarjeta de imagenes con ofertas -->
     </main>
-<!-- ---------------------------------------------------------------------------------------------- -->
-<h1>Formulario de contacto</h1>
-<form action="#">
-     <div>
-        <label for="nombre-formulario">Nombre</label>
-        <input type="text" id="nombre-formulario">
-     </div>
-     <br>
-     <div>
-        <label for="correo-formulario">Correo</label>
-        <input type="email" id="correo-formulario">
-     </div>
-     <br>
-     <div>
-        <label for="mensaje-formulario">Escriba su mensaje</label><br>
-        <textarea name="" id="mensaje-formulario" cols="30" rows="10"></textarea>     
-    </div>
-    <br>
-    <input type="submit" value="Enviar">
-</form>
+    <!-- ---------------------------------------------------------------------------------------------- -->
+    <h1>Formulario de contacto</h1>
+    <form action="#">
+        <div>
+            <label for="nombre-formulario">Nombre</label>
+            <input type="text" id="nombre-formulario">
+        </div>
+        <br>
+        <div>
+            <label for="correo-formulario">Correo</label>
+            <input type="email" id="correo-formulario">
+        </div>
+        <br>
+        <div>
+            <label for="mensaje-formulario">Escriba su mensaje</label><br>
+            <textarea name="" id="mensaje-formulario" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
 
-<!-- ---------------------------------------------------------------------------------------------- -->
-     <!-- Footer de sistio web -->
-     <footer> 
+    <!-- ---------------------------------------------------------------------------------------------- -->
+    <!-- Footer de sistio web -->
+    <footer>
 
-        <div class="contenedor-footer">
-            <div class="logo-footer">
-                <img src="../image/portada.jpg" alt="Logo Pagina Ropa Usada-Recicla">
-            </div>
-            <div class="menu-footer">
-                <nav>
-                    <ul>
-                        <li>Home</li>
-                        <li>Ofertas</li>
-                        <li>Comprar</li>
-                        <li>Nosotros</li>
-                        <li>Contacto</li>
+        <div class="footer"><!--contenedor-footer-->
+
+            <div class="footer-contenedor"><!--class="menu-footer-->
+                <img class="footer-contenedor__logo" src="../image/portada.jpg"
+                    alt="Logo Pagina Ropa Usada-Recicla"><!--class="logo-footer"-->
+                <nav class="footer-contenedor__menu">
+                    <ul class="footer-contenedor__ul">
+                        <li class="footer-contenedor__lista">Home</li>
+                        <li class="footer-contenedor__lista">Ofertas</li>
+                        <li class="footer-contenedor__lista">Comprar</li>
+                        <li class="footer-contenedor__lista">Nosotros</li>
+                        <li class="footer-contenedor__lista">Contacto</li>
                     </ul>
                 </nav>
+                <div class="footer-contenedor__suscrip"><!--class="suscrip"-->
+                    <label class="footer-contenedor__etiqueta" for="email-suscrip">Email</label><br>
+                    <input class="footer-contenedor__email" type="email" id="email-suscrip">
+                    <input class="footer-contenedor__boton" type="submit" value="Suscribete">
+                </div>
             </div>
+            <hr>
 
-            <br>
-            <p>Derechos Reservados 2023</p>
+
             <!-- Logo redes sociales -->
-            <div class="logos-redes">
-                <img src="../image/iconos/instagram-144.png" alt="Logo Instagram">
-                <img src="../image/iconos/facebook-144.png" alt="Logo Facebook">
-                <img src="../image/iconos/twitter-256.png" alt="Logo Twitter">
-            </div>
-            <div class="suscrip">
-                <label for="email-suscrip">Email</label><br>
-                <input type="email" id="email-suscrip">
-                <input type="submit" value="Suscribete">
-            </div>
 
+            <div class="contenedor-redes"><!--class="logos-redes"-->
+                <p class="contenedor-redes__parrafo">Derechos Reservados 2023</p>
+                <img class="contenedor-redes__imagen" src="../image/iconos/instagram-144.png" alt="Logo Instagram">
+                <img class="contenedor-redes__imagen" src="../image/iconos/facebook-144.png" alt="Logo Facebook">
+                <img class="contenedor-redes__imagen" src="../image/iconos/twitter-256.png" alt="Logo Twitter">
+            </div>
         </div>
-
     </footer>
-
 </body>
+
 </html>
