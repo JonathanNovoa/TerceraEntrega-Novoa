@@ -1,0 +1,51 @@
+.vendidos {
+	width: 100%;
+	padding: 1rem;
+}
+
+.vendidos__titulo {
+	color: green;
+	text-align: center;
+	padding: 1rem;
+}
+
+.vendidos-contenedor {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 1rem;
+	gap: 5rem;
+	width: 100%;
+	background-color: white;
+}
+
+.vendidos-contenedor__card {
+	/* margin: 5px 10px; */
+	box-shadow: 0 4px 8px 0 grey, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	padding-top: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
+	flex-grow: 1;
+	border-radius: 2%;
+}
+
+.vendidos-contenedor__imagen {
+	width: 100%;
+	height: auto;
+}
+
+.vendidos-contenedor__imagen:hover {
+	border: 5px solid green;
+	transform: rotate(-2deg);
+}
+
+.vendidos-contenedor__descripcion {
+	text-align: center;
+	text-shadow: 1px 1px 1px rgb(75, 73, 73);
+	/* padding: 10px; */
+	width: 100%;
+}

@@ -1,0 +1,14 @@
+$ff:'Courgette', cursive;
+$cf:rgb(228, 220, 220);
+$cf-footer:rgba(255, 255, 255, 0.684);
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: ff;
+}
+
+body {
+	background-color: cf;
+	// font-family: 'Courgette', cursive;
+}

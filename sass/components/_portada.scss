@@ -1,0 +1,17 @@
+/* ---- Comienzo portada */
+.portada__imagen {
+	height: 300px;
+	background-image: url("../image/portada2.jpg");
+	background-size: cover;
+	width: 100%;
+}
+
+.portada__titulo {
+	display: flex;
+	justify-content: center;
+	color: #efb810;
+	text-shadow: 5px 5px 2px black;
+	font-size: 80px;
+	/* text-align: center; */
+	align-items: center;
+}

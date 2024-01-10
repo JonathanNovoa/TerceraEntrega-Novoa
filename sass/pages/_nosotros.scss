@@ -1,0 +1,108 @@
+.nosotros {
+	background-color: whitesmoke;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+
+}
+
+.nosotros-contenedor {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	padding: 1rem;
+	gap: 1rem;
+	width: 100%;
+	height: 100%;
+	padding: 1rem;
+}
+
+.nosotros__titulo {
+	padding: 1rem;
+}
+
+.nosotros-contenedor__imagen {
+	grid-column: span 1;
+	width: 100%;
+	height: 50vh;
+}
+
+.nosotros-contenedor__descripcion {
+	height: 100%;
+	grid-column: span 2;
+	align-content: center;
+}
+
+/*--- seccion mision --- */
+.mision {
+	background-color: whitesmoke;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.mision-contenedor {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	padding: 1rem;
+	gap: 1rem;
+	width: 100%;
+	height: 100%;
+	padding: 1rem;
+}
+
+.mision__titulo {
+	padding: 1rem;
+}
+
+.mision-contenedor__imagen {
+	grid-column: span 1;
+	grid-row: span 2;
+	width: 100%;
+	height: 50vh;
+}
+
+.mision-contenedor__descripcion {
+	height: 100%;
+	grid-column: span 2;
+	grid-row: span 2;
+	align-content: center;
+}
+
+/* --- seccion vision --- */
+.vision {
+	background-color: whitesmoke;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+
+}
+
+.vision-contenedor {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	padding: 1rem;
+	gap: 1rem;
+	width: 100%;
+	height: 100%;
+	padding: 1rem;
+}
+
+.vision__titulo {
+	padding: 1rem;
+}
+
+.vision-contenedor__imagen {
+	grid-column: span 1;
+	width: 100%;
+	height: 50vh;
+}
+
+.vision-contenedor__descripcion {
+	height: 100%;
+	grid-column: span 2;
+	align-content: center;
+}
