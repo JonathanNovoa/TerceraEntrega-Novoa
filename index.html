@@ -4,150 +4,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
     <title>Pagina Venta de Ropa</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <div class="header-inicio">
-        <header>
-            <section class="contenedor-header">
-                <img src="./image/logo.jpg" alt="logo empresa de ropa de segunda mano">
-                <nav>
-                    <ul class="menu">
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./pages/ofertas.html">Ofertas</a></li>
-                        <li><a href="./pages/comprar.html">Comprar</a></li>
-                        <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                        <li><a href="./pages/contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
-            </section>
-        </header>
-    </div>
+
+    <header>
+        <!-- <div class="header"> class="header-inicio" -->
+        <section class="banner"> <!-- class="contenedor-header"> -->
+            <img class="banner__imagen" src="./image/logo.jpg" alt="logo empresa de ropa de segunda mano">
+            <nav>
+                <ul class="banner__menu"> <!-- class="menu" -->
+                    <li class="banner__lista">
+                        <a class="banner__link" href="./index.html">Home</a></li>
+                    <li class="banner__lista">
+                        <a class="banner__link" href="./pages/ofertas.html">Ofertas</a></li>
+                    <li class="banner__lista">
+                        <a class="banner__link" href="./pages/comprar.html">Comprar</a></li>
+                    <li class="banner__lista">
+                        <a class="banner__link" href="./pages/nosotros.html">Nosotros</a></li>
+                    <li class="banner__lista">
+                        <a class="banner__link" href="./pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </section>
+        <!-- </div> -->
+    </header>
+
     <main>
 
-        <section class="portada-imagen">
+        <section class="portada"> <!-- class="portada-imagen"  -->
             <!-- <img src="./image/portada2.jpg" alt="imagen portada de venta de ropa usada"> -->
-            <div class="portada-d">
-                <h1>Reduce - Reuce - Recycle</h1>
+            <div class="portada__imagen"> <!--class="portada-d"-->
+                <h1 class="portada__titulo">Reduce - Reuce - Recycle</h1>
             </div>
         </section>
-        <!-- contenido carrusel imagenes ofertas -->
+        <!-- Comienzo tarjeta de imagenes con ofertas -->
 
-        <section class="ofertas-index">
-            <h2>OFERTAS!!!</h2>
-            <div class="cardofertas-contenedor-index">
-            <article class="cardofertas-index">
-                <!-- Carrusel de imagenes con ofertas -->
-                <div class="cardofertas-foto">
-                    <img src="./image/img-product/imagen3.jpg" alt="Sweater color Gris">
-                </div>
-                <div class="contenido-cardofertas">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos molestiae animi voluptate. Nostrum
+        <section class="ofertas"> <!--class="ofertas-index"-->
+            <h2 class="ofertas__titulo">OFERTAS!!!</h2>
+            <div class="ofertas-contenedor"> <!--class="cardofertas-contenedor-index"-->
+                <article class="ofertas-contenedor__card"> <!--class="cardofertas-index">-->
+                    <!-- tarjeta imagenes con ofertas -->
+                    <img class="ofertas-contenedor__imagen" src="./image/img-product/imagen3.jpg"
+                        alt="Sweater color Gris"> <!--class="cardofertas-foto"-->
+                    <!-- class="contenido-cardofertas" -->
+                    <p class="ofertas-contenedor__descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Eos molestiae animi voluptate.
+                        Nostrum
                         cum
                         ullam hic, recusandae ducimus illo? Adipisci, soluta culpa fugit dicta est odio maxime
                         distinctio
                         nam eius.
                     </p>
                     <button>Comprar</button>
-                </div>
-            </article>
-            <article class="cardofertas-index">
-                <!-- Carrusel de imagenes con ofertas -->
-                <div class="cardofertas-foto">
-                    <img src="./image/img-product/imagen5.jpg" alt="Sweater Color Mostaza">
-                </div>
-                <div class="contenido-cardofertas">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos molestiae animi voluptate. Nostrum
+
+                </article>
+                <article class="ofertas-contenedor__card"> <!--class="cardofertas-index">-->
+                    <!-- tarjeta imagenes con ofertas -->
+                    <img class="ofertas-contenedor__imagen" src="./image/img-product/imagen5.jpg"
+                        alt="Sweater Color Mostaza"> <!--class="cardofertas-foto"-->
+                    <!-- class="contenido-cardofertas" -->
+                    <p class="ofertas-contenedor__descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Eos molestiae animi voluptate.
+                        Nostrum
                         cum
                         ullam hic, recusandae ducimus illo? Adipisci, soluta culpa fugit dicta est odio maxime
                         distinctio
                         nam eius.
                     </p>
                     <button>Comprar</button>
-                </div>
-            </article>
-            <article class="cardofertas-index">
-                <!-- Carrusel de imagenes con ofertas -->
-                <div class="cardofertas-foto">
-                    <img src="./image/img-product/imagen7.jpg" alt="Chaqueta Mezclilla Usada">
-                </div>
-                <div class="contenido-cardofertas">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos molestiae animi voluptate. Nostrum
+
+                </article>
+                <article class="ofertas-contenedor__card"> <!--class="cardofertas-index">-->
+                    <!-- tarjeta imagenes con ofertas -->
+                    <img class="ofertas-contenedor__imagen" src="./image/img-product/imagen7.jpg"
+                        alt="Chaqueta Mezclilla Usada"> <!--class="cardofertas-foto"-->
+                    <!-- class="contenido-cardofertas" -->
+                    <p class="ofertas-contenedor__descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Eos molestiae animi voluptate.
+                        Nostrum
                         cum
                         ullam hic, recusandae ducimus illo? Adipisci, soluta culpa fugit dicta est odio maxime
                         distinctio
                         nam eius.
                     </p>
                     <button>Comprar</button>
-                </div>
-            </article>
-        </div>
+
+                </article>
+            </div>
         </section>
+        <!-- Termino tarjeta de imagenes con ofertas -->
 
         <!-- contenido carrusel imagenes productos mas vendidos -->
-        <section class="vendidos-index">
-            <H2>PRODUCTOS MAS VENDIDOS</H2>
-        <div class="cardvendidos-contenedor-index">
-            <article class="cardvendidos-index">
-
-                <div class="cardvendidos-foto">
-                    <img src="./image/img-product/imagen2.jpg" alt="Camisa Usada">
-                </div>
-                <div class="contenido-cardvendidos">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos molestiae animi voluptate. Nostrum
-                        cum
-                        ullam hic, recusandae ducimus illo? Adipisci, soluta culpa fugit dicta est odio maxime
-                        distinctio
-                        nam eius.
-                    </p>
-                    <button>Comprar</button>
-                </div>
-            </article>
-            <article class="cardvendidos-index">
-
-                <div class="cardvendidos-foto">
-                    <img src="./image/img-product/imagen4.jpg" alt="Chaqueta Mezclilla Color Jeans">
-                </div>
-                <div class="contenido-cardvendidos">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos molestiae animi voluptate. Nostrum
-                        cum
-                        ullam hic, recusandae ducimus illo? Adipisci, soluta culpa fugit dicta est odio maxime
-                        distinctio
-                        nam eius.
-                    </p>
-                    <button>Comprar</button>
-                </div>
-            </article>
-            <article class="cardvendidos-index">
-
-                <div class="cardvendidos-foto">
-                    <img src="./image/img-product/imagen6.jpg" alt="Camisa Usada Holgada">
-                </div>
-                <div class="contenido-cardvendidos">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos molestiae animi voluptate. Nostrum
-                        cum
-                        ullam hic, recusandae ducimus illo? Adipisci, soluta culpa fugit dicta est odio maxime
-                        distinctio
-                        nam eius.
-                    </p>
-                    <button>Comprar</button>
-                </div>
-            </article>
-        </div>
+        <section class="vendidos"> <!--class="vendidos-index"-->
+            <H2 class="vendidos__titulo">PRODUCTOS MAS VENDIDOS</H2>
+            <div class="vendidos-contenedor"> <!--class="cardvendidos-contenedor-index"-->
+                <article class="vendidos-contenedor__card"><!--class="cardvendidos-index"-->
+                        <img class="vendidos-contenedor__imagen" src="./image/img-product/imagen2.jpg" alt="Camisa Usada"><!--class="cardvendidos-foto"-->
+                    <div class="vendidos-contenedor__descripcion"><!--class="contenido-cardvendidos"-->
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos molestiae animi voluptate.
+                            Nostrum
+                            cum
+                            ullam hic, recusandae ducimus illo? Adipisci, soluta culpa fugit dicta est odio maxime
+                            distinctio
+                            nam eius.
+                        </p>
+                        <button>Comprar</button>
+                    </div>
+                </article>
+                <article class="vendidos-contenedor__card">
+                        <img class="vendidos-contenedor__imagen" src="./image/img-product/imagen4.jpg" alt="Chaqueta Mezclilla Color Jeans">
+                    <div class="vendidos-contenedor__descripcion">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos molestiae animi voluptate.
+                            Nostrum
+                            cum
+                            ullam hic, recusandae ducimus illo? Adipisci, soluta culpa fugit dicta est odio maxime
+                            distinctio
+                            nam eius.
+                        </p>
+                        <button>Comprar</button>
+                    </div>
+                </article>
+                <article class="vendidos-contenedor__card">
+                        <img class="vendidos-contenedor__imagen" src="./image/img-product/imagen6.jpg" alt="Camisa Usada Holgada">
+                    <div class="vendidos-contenedor__descripcion">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos molestiae animi voluptate.
+                            Nostrum
+                            cum
+                            ullam hic, recusandae ducimus illo? Adipisci, soluta culpa fugit dicta est odio maxime
+                            distinctio
+                            nam eius.
+                        </p>
+                        <button>Comprar</button>
+                    </div>
+                </article>
+            </div>
         </section>
         <!-- ---------------------------------------------------------------------- -->
         <!-- contenido productos  -->
         <section class="productos">
-            <h2>PRODUCTOS</h2>
-        <div class="card-contenedor-index">
-            <article class="card">
-                <div class="card-foto">
-                    <img src="./image/img-product/imagen1.jpg" alt="Camisa Mezclilla color Jeans">
-                </div>
-                <div class="contenido-card">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos molestiae animi voluptate. Nostrum
+            <h2 class="productos__titulo">PRODUCTOS</h2>
+            <div class="contenedor-productos"><!--class="card-contenedor-index"-->
+                <article class="contenedor-productos__card"><!--class="card"-->
+                        <img class="contenedor-productos__imagen" src="./image/img-product/imagen1.jpg" alt="Camisa Mezclilla color Jeans"><!--class="card-foto"-->
+                    <div class="contenedor-productos__descripcion">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos molestiae animi voluptate.
+                            Nostrum
+                            cum
+                            ullam hic, recusandae ducimus illo? Adipisci, soluta culpa fugit dicta est odio maxime
+                            distinctio
+                            nam eius.
+                        </p>
+                        <button>Comprar</button>
+                    </div>
+                </article>
+                <article class="contenedor-productos__card"><!--class="card"-->
+                    <img class="contenedor-productos__imagen" src="./image/img-product/imagen2.jpg" alt="Camisa Mezclilla color Jeans"><!--class="card-foto"-->
+                <div class="contenedor-productos__descripcion">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos molestiae animi voluptate.
+                        Nostrum
                         cum
                         ullam hic, recusandae ducimus illo? Adipisci, soluta culpa fugit dicta est odio maxime
                         distinctio
@@ -156,160 +176,137 @@
                     <button>Comprar</button>
                 </div>
             </article>
-            <article class="card">
-                <div class="card-foto">
-                    <img src="./image/img-product/imagen2.jpg" alt="Camisa Usada">
-                </div>
-                <div class="contenido-card">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos molestiae animi voluptate. Nostrum
-                        cum
-                        ullam hic, recusandae ducimus illo? Adipisci, soluta culpa fugit dicta est odio maxime
-                        distinctio
-                        nam eius.
-                    </p>
-                    <button>Comprar</button>
-                </div>
-            </article>
-            <article class="card">
-                <div class="card-foto">
-                    <img src="./image/img-product/imagen3.jpg" alt="sweater Usado Color Negro Desgastado">
-                </div>
-                <div class="contenido-card">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos molestiae animi voluptate. Nostrum
-                        cum
-                        ullam hic, recusandae ducimus illo? Adipisci, soluta culpa fugit dicta est odio maxime
-                        distinctio
-                        nam eius.
-                    </p>
-                    <button>Comprar</button>
-                </div>
-            </article>
-            <article class="card">
-                <div class="card-foto">
-                    <img src="./image/img-product/imagen4.jpg" alt="Chaqueta de Mezclilla Usada">
-                </div>
-                <div class="contenido-card">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos molestiae animi voluptate. Nostrum
-                        cum
-                        ullam hic, recusandae ducimus illo? Adipisci, soluta culpa fugit dicta est odio maxime
-                        distinctio
-                        nam eius.
-                    </p>
-                    <button>Comprar</button>
-                </div>
-            </article>
-            <article class="card">
-                <div class="card-foto">
-                    <img src="./image/img-product/imagen5.jpg" alt="Sweater Color Mostaza">
-                </div>
-                <div class="contenido-card">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos molestiae animi voluptate. Nostrum
-                        cum
-                        ullam hic, recusandae ducimus illo? Adipisci, soluta culpa fugit dicta est odio maxime
-                        distinctio
-                        nam eius.
-                    </p>
-                    <button>Comprar</button>
-                </div>
-            </article>
-            <article class="card">
-                <div class="card-foto">
-                    <img src="./image/img-product/imagen6.jpg" alt="Camisa Usada Holgada">
-                </div>
-                <div class="contenido-card">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos molestiae animi voluptate. Nostrum
-                        cum
-                        ullam hic, recusandae ducimus illo? Adipisci, soluta culpa fugit dicta est odio maxime
-                        distinctio
-                        nam eius.
-                    </p>
-                    <button>Comprar</button>
-                </div>
-            </article>
-            <article class="card">
-                <div class="card-foto">
-                    <img src="./image/img-product/imagen7.jpg" alt="Chaqueta Mezclilla Usada">
-                </div>
-                <div class="contenido-card">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos molestiae animi voluptate. Nostrum
-                        cum
-                        ullam hic, recusandae ducimus illo? Adipisci, soluta culpa fugit dicta est odio maxime
-                        distinctio
-                        nam eius.
-                    </p>
-                    <button>Comprar</button>
-                </div>
-            </article>
-            <article class="card">
-                <div class="card-foto">
-                    <img src="./image/img-product/imagen8.jpg" alt="Polera Usada Varios Colores">
-                </div>
-                <div class="contenido-card">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos molestiae animi voluptate. Nostrum
-                        cum
-                        ullam hic, recusandae ducimus illo? Adipisci, soluta culpa fugit dicta est odio maxime
-                        distinctio
-                        nam eius.
-                    </p>
-                    <button>Comprar</button>
-                </div>
-            </article>
-            <article class="card">
-                <div class="card-foto">
-                    <img src="./image/img-product/imagen2.jpg" alt="Camisa Usada">
-                </div>
-                <div class="contenido-card">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos molestiae animi voluptate. Nostrum
-                        cum
-                        ullam hic, recusandae ducimus illo? Adipisci, soluta culpa fugit dicta est odio maxime
-                        distinctio
-                        nam eius.
-                    </p>
-                    <button>Comprar</button>
-                </div>
-            </article>
-            <div>
-
+            <article class="contenedor-productos__card"><!--class="card"-->
+                <img class="contenedor-productos__imagen" src="./image/img-product/imagen3.jpg" alt="Camisa Mezclilla color Jeans"><!--class="card-foto"-->
+            <div class="contenedor-productos__descripcion">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos molestiae animi voluptate.
+                    Nostrum
+                    cum
+                    ullam hic, recusandae ducimus illo? Adipisci, soluta culpa fugit dicta est odio maxime
+                    distinctio
+                    nam eius.
+                </p>
+                <button>Comprar</button>
             </div>
+        </article>
+        <article class="contenedor-productos__card"><!--class="card"-->
+            <img class="contenedor-productos__imagen" src="./image/img-product/imagen4.jpg" alt="Camisa Mezclilla color Jeans"><!--class="card-foto"-->
+        <div class="contenedor-productos__descripcion">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos molestiae animi voluptate.
+                Nostrum
+                cum
+                ullam hic, recusandae ducimus illo? Adipisci, soluta culpa fugit dicta est odio maxime
+                distinctio
+                nam eius.
+            </p>
+            <button>Comprar</button>
         </div>
+    </article>
+    <article class="contenedor-productos__card"><!--class="card"-->
+        <img class="contenedor-productos__imagen" src="./image/img-product/imagen5.jpg" alt="Camisa Mezclilla color Jeans"><!--class="card-foto"-->
+    <div class="contenedor-productos__descripcion">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos molestiae animi voluptate.
+            Nostrum
+            cum
+            ullam hic, recusandae ducimus illo? Adipisci, soluta culpa fugit dicta est odio maxime
+            distinctio
+            nam eius.
+        </p>
+        <button>Comprar</button>
+    </div>
+</article>
+<article class="contenedor-productos__card"><!--class="card"-->
+    <img class="contenedor-productos__imagen" src="./image/img-product/imagen6.jpg" alt="Camisa Mezclilla color Jeans"><!--class="card-foto"-->
+<div class="contenedor-productos__descripcion">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos molestiae animi voluptate.
+        Nostrum
+        cum
+        ullam hic, recusandae ducimus illo? Adipisci, soluta culpa fugit dicta est odio maxime
+        distinctio
+        nam eius.
+    </p>
+    <button>Comprar</button>
+</div>
+</article>
+<article class="contenedor-productos__card"><!--class="card"-->
+    <img class="contenedor-productos__imagen" src="./image/img-product/imagen7.jpg" alt="Camisa Mezclilla color Jeans"><!--class="card-foto"-->
+<div class="contenedor-productos__descripcion">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos molestiae animi voluptate.
+        Nostrum
+        cum
+        ullam hic, recusandae ducimus illo? Adipisci, soluta culpa fugit dicta est odio maxime
+        distinctio
+        nam eius.
+    </p>
+    <button>Comprar</button>
+</div>
+</article>
+<article class="contenedor-productos__card"><!--class="card"-->
+    <img class="contenedor-productos__imagen" src="./image/img-product/imagen5.jpg" alt="Camisa Mezclilla color Jeans"><!--class="card-foto"-->
+<div class="contenedor-productos__descripcion">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos molestiae animi voluptate.
+        Nostrum
+        cum
+        ullam hic, recusandae ducimus illo? Adipisci, soluta culpa fugit dicta est odio maxime
+        distinctio
+        nam eius.
+    </p>
+    <button>Comprar</button>
+</div>
+</article>
+<article class="contenedor-productos__card"><!--class="card"-->
+    <img class="contenedor-productos__imagen" src="./image/img-product/imagen3.jpg" alt="Camisa Mezclilla color Jeans"><!--class="card-foto"-->
+<div class="contenedor-productos__descripcion">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos molestiae animi voluptate.
+        Nostrum
+        cum
+        ullam hic, recusandae ducimus illo? Adipisci, soluta culpa fugit dicta est odio maxime
+        distinctio
+        nam eius.
+    </p>
+    <button>Comprar</button>
+</div>
+</article>
+                <div>
+
+                </div>
+            </div>
         </section>
 
     </main>
     <!-- Footer de sistio web -->
     <footer>
 
-        <div class="contenedor-footer">
-            <div class="logo-footer">
-                <img src="./image/portada.jpg" alt="Logo Pagina Ropa Usada-Recicla">
-            </div>
-            <div class="menu-footer">
-                <nav>
-                    <ul>
-                        <li>Home</li>
-                        <li>Ofertas</li>
-                        <li>Comprar</li>
-                        <li>Nosotros</li>
-                        <li>Contacto</li>
+        <div class="footer"><!--contenedor-footer-->
+
+            <div class="footer-contenedor"><!--class="menu-footer-->
+                    <img class="footer-contenedor__logo" src="./image/portada.jpg" alt="Logo Pagina Ropa Usada-Recicla"><!--class="logo-footer"-->
+                <nav class="footer-contenedor__menu">
+                    <ul class="footer-contenedor__ul">
+                        <li class="footer-contenedor__lista">Home</li>
+                        <li class="footer-contenedor__lista">Ofertas</li>
+                        <li class="footer-contenedor__lista">Comprar</li>
+                        <li class="footer-contenedor__lista">Nosotros</li>
+                        <li class="footer-contenedor__lista">Contacto</li>
                     </ul>
                 </nav>
+                <div class="footer-contenedor__suscrip"><!--class="suscrip"-->
+                    <label class="footer-contenedor__etiqueta" for="email-suscrip">Email</label><br>
+                    <input class="footer-contenedor__email" type="email" id="email-suscrip">
+                    <input class="footer-contenedor__boton" type="submit" value="Suscribete">
+                </div>
             </div>
+            <hr>
 
 
-            <p>Derechos Reservados 2023</p>
             <!-- Logo redes sociales -->
 
-            <div class="logos-redes">
-                <img src="./image/iconos/instagram-144.png" alt="Logo Instagram">
-                <img src="./image/iconos/facebook-144.png" alt="Logo Facebook">
-                <img src="./image/iconos/twitter-256.png" alt="Logo Twitter">
+            <div class="contenedor-redes"><!--class="logos-redes"-->
+                <p class="contenedor-redes__parrafo">Derechos Reservados 2023</p>
+                <img class="contenedor-redes__imagen" src="./image/iconos/instagram-144.png" alt="Logo Instagram">
+                <img class="contenedor-redes__imagen" src="./image/iconos/facebook-144.png" alt="Logo Facebook">
+                <img class="contenedor-redes__imagen" src="./image/iconos/twitter-256.png" alt="Logo Twitter">
             </div>
-
-            <div class="suscrip">
-                <label for="email-suscrip">Email</label><br>
-                <input type="email" id="email-suscrip">
-                <input type="submit" value="Suscribete">
-            </div>
-
         </div>
 
     </footer>
