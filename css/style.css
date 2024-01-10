@@ -2,25 +2,18 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Courgette', cursive;
 }
 
 body {
 	background-color: rgb(228, 220, 220);
+	font-family: 'Courgette', cursive;
 }
 
-.header-inicio {
+/* ---- Comienzo de la seccion banner --- */
+.banner {
 	background-color: rgb(23, 135, 220);
 	width: 100%;
-}
-
-.contenedor-header img {
-	width: 100px;
-	height: 100px;
-	border-radius: 100%;
-	padding: 1rem;
-}
-
-.contenedor-header {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -28,42 +21,38 @@ body {
 	gap: 1rem;
 }
 
-/* .contenedor-header h2{
-	display: flex;
-	flex-direction: column;
-} */
-/* .contenedor-header nav {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding-top: 35px;
-	padding-left: 5%;
-	padding-right: 5%;
-	font-weight: bold;
-	float: right;
-} */
-/* nav ul {
-	text-align: center;
-  } */
-.contenedor-header ul li {
-	display: inline-block;
-	padding: 0px 20px;
+.banner__imagen {
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	padding: 1rem;
 }
 
-.contenedor-header a {
+.banner__menu {
+	display: flex;
+	gap: 1rem;
+	padding: 0px 20px;
+	list-style: none;
+	/* display: inline-block; */
+	width: 100%;
+}
+
+.banner__link {
 	color: white;
 	text-decoration: none;
-
 }
 
-.portada-imagen .portada-d {
+/* ---- termino de la seccion banner --- */
+/* ------------------------------------- */
+/* ---- Comienzo portada */
+.portada__imagen {
 	height: 300px;
 	background-image: url("../image/portada2.jpg");
 	background-size: cover;
 	width: 100%;
 }
 
-.portada-imagen h1 {
+.portada__titulo {
 	display: flex;
 	justify-content: center;
 	color: #efb810;
@@ -73,215 +62,326 @@ body {
 	align-items: center;
 }
 
-/* .productos {
-	align-items: center;
-} */
+/* --------Comienzo tarjeta de imagenes con ofertas -------------------*/
+.ofertas {
+	/* display: flex;
+	flex-direction: column;
+	justify-content: space-around; */
+	padding: 1rem;
+	width: 100%;
+}
 
-h2 {
+.ofertas__titulo {
+	color: red;
+	text-align: center;
+	padding: 1rem;
+}
+
+.ofertas-contenedor {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 1rem;
+	gap: 5rem;
+	/* flex-grow: 1; */
+	background-color: white;
+	width: 100%;
+}
+
+.ofertas-contenedor__card {
+	/* margin: 5px 10px; */
+	/* gap: 1rem; */
+	box-shadow: 0 4px 8px 0 grey, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	padding-top: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
+	flex-grow: 1;
+	border-radius: 2%;
+}
+
+.ofertas-contenedor__imagen {
+	width: 100%;
+	height: auto;
+}
+
+.ofertas-contenedor__imagen:hover {
+	border: 5px solid red;
+	transform: rotate(2deg);
+}
+
+.ofertas-contenedor__descripcion {
+	text-align: center;
+	text-shadow: 1px 1px 1px rgb(75, 73, 73);
+	/* padding: 10px; */
+	width: 100%;
+}
+
+/* --------Termino tarjeta de imagenes con ofertas -------------------*/
+/* --------carrusel de imagenes con tarjetas productos más vendidos -------------------*/
+.vendidos {
+	width: 100%;
+	padding: 1rem;
+}
+
+.vendidos__titulo {
+	color: green;
+	text-align: center;
+	padding: 1rem;
+}
+
+.vendidos-contenedor {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 1rem;
+	gap: 5rem;
+	width: 100%;
+	background-color: white;
+}
+
+.vendidos-contenedor__card {
+	/* margin: 5px 10px; */
+	box-shadow: 0 4px 8px 0 grey, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	padding-top: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
+	flex-grow: 1;
+	border-radius: 2%;
+}
+
+.vendidos-contenedor__imagen {
+	width: 100%;
+	height: auto;
+}
+
+.vendidos-contenedor__imagen:hover {
+	border: 5px solid green;
+	transform: rotate(-2deg);
+}
+
+.vendidos-contenedor__descripcion {
+	text-align: center;
+	text-shadow: 1px 1px 1px rgb(75, 73, 73);
+	/* padding: 10px; */
+	width: 100%;
+}
+
+/* -------------------tarjetas de produtos --------------------------------------*/
+.productos {
+	width: 100%;
+	padding: 1rem;
+}
+
+.productos__titulo {
 	color: black;
 	text-align: center;
 	padding: 1rem;
 }
 
-/* --------carrusel de imagenes con tarjetas ofertas -------------------*/
-.cardofertas-contenedor-index {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	padding: 1rem;
-
-}
-
-.ofertas-index h2 {
-	color: red;
-	text-align: center;
-}
-
-.ofertas-index {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-}
-
-.cardofertas-index {
-	margin: 5px 10px;
-	box-shadow: 0 4px 8px 0 grey, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	display: flex;
-	flex-direction: column;
-
-
-	justify-content: space-between;
-	width: 100%;
-	padding-top: 5%;
-	padding-left: 5%;
-	padding-right: 5%;
-	flex-grow: 1;
-}
-
-.cardofertas-foto img {
-	width: 100%;
-	height: auto;
-
-}
-
-.cardofertas-foto:hover {
-	border: 5px solid red;
-	transform: rotate(2deg);
-}
-
-.contenido-cardofertas {
-	text-align: center;
-	text-shadow: 1px 1px 1px rgb(75, 73, 73);
-	padding: 10px;
-
-}
-
-
-/* --------carrusel de imagenes con tarjetas productos más vendidos -------------------*/
-.cardvendidos-contenedor-index {
-	display: flex;
-
-
-	flex-direction: row;
-	justify-content: space-around;
-	padding: 1rem;
-}
-
-.vendidos-index h2 {
-	color: green;
-	text-align: center;
-}
-
-.cardvendidos-index {
-	margin: 5px 10px;
-	box-shadow: 0 4px 8px 0 grey, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	display: flex;
-
-
-	flex-direction: column;
-	justify-content: space-between;
-	width: 100%;
-	padding-top: 5%;
-	padding-left: 5%;
-	padding-right: 5%;
-	flex-grow: 1;
-}
-
-.cardvendidos-foto img {
-	width: 100%;
-	height: auto;
-
-}
-
-.cardvendidos-foto:hover {
-	border: 5px solid green;
-	transform: rotate(-2deg);
-}
-
-.contenido-cardvendidos {
-	text-align: center;
-
-
-	text-shadow: 1px 1px 1px rgb(75, 73, 73);
-	padding: 10px;
-
-}
-
-
-/* -------------------tarjetas de produtos --------------------------------------*/
-.card-contenedor-index {
+.contenedor-productos {
 	display: grid;
-
-
+	width: 100%;
 	grid-template-columns: repeat(4, 1fr);
-	align-content: stretch;
+	/* align-content: stretch; */
 	justify-content: space-around;
-	padding: 1rem;
+	gap: 1rem;
+	/* padding: 0.5rem; */
 }
 
-.card {
-
-
-	margin: 15px 10px;
+.contenedor-productos__card {
 	box-shadow: 0 4px 8px 0 grey, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	justify-content: space-between;
 	width: 100%;
-	padding-top: 5%;
-	padding-left: 5%;
-	padding-right: 5%;
+	padding-top: 10%;
+	padding-left: 10%;
+	padding-right: 10%;
 }
 
-.card-foto img {
+.contenedor-productos__imagen {
 	width: 100%;
-
-
 	height: auto;
-
 }
 
-.card-foto:hover {
-	border: 1px solid black;
-	transform: scale(1.15);
+.contenedor-productos__imagen:hover {
+	border: 3px solid black;
+	transform: scale(1.05);
 }
 
-.contenido-card {
+.contenedor-productos__descripcion {
 	text-align: center;
-
 	text-shadow: 1px 1px 1px rgb(75, 73, 73);
-	padding: 10px;
-
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	width: 100%;
 }
 
-#footer {
-	position: relative;
-	bottom: 0;
-}
-
-.contenedor-footer {
+/* ----------Comienzo de footer--------------------------- */
+.footer {
 	background-color: grey;
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
-
-
 }
 
-.contenedor-footer img {
-	width: 300px;
-
-	height: 200px;
-	margin: 5px 10px;
+.footer-contenedor {
+	display: flex;
+	flex-direction: row;
+	gap: 1.5rem;
+	margin: 10px 10px;
 	padding: 10px;
-
+	align-items: start;
+	justify-content: space-between;
 }
 
-.contenedor-footer .menu-footer {
-
-
-	padding-top: 50px;
-	margin: 5px 10px;
+.footer-contenedor__logo {
+	width: 300px;
+	height: 150px;
+	border-radius: 5%;
 }
 
-.contenedor-footer .suscrip {
-
-
-	padding-top: 100px;
-	margin: 5px 10px;
+.footer-contenedor__lista {
+	list-style: none;
+	border-style: solid;
+	border-color: black;
+	color: rgba(255, 255, 255, 0.684);
 }
 
-.contenedor-footer p {
-	padding-top: 16%;
+.footer-contenedor__suscrip {
+	color: rgba(255, 255, 255, 0.684);
+}
 
-
+.contenedor-redes {
+	display: flex;
+	flex-direction: row;
 	text-align: center;
-	margin: 5px 10px;
+	align-items: center;
+	justify-content: center;
+	justify-items: center;
+	color: rgba(255, 255, 255, 0.684);
+	;
+	gap: 1rem;
+	padding: 10px;
 }
 
-.contenedor-footer .logos-redes img {
-	padding-top: 46%;
-	margin: 5px 10px;
-	width: 10%;
-	height: 10%;
+.contenedor-redes__imagen {
+	width: 40px;
+	height: 40px;
+}
 
+/* ---pagina nosotros--- */
+.nosotros {
+	background-color: whitesmoke;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
 
+}
 
+.nosotros-contenedor {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	padding: 1rem;
+	gap: 1rem;
+	width: 100%;
+	height: 100%;
+	padding: 1rem;
+}
+
+.nosotros__titulo {
+	padding: 1rem;
+}
+
+.nosotros-contenedor__imagen {
+	grid-column: span 1;
+	width: 100%;
+	height: 50vh;
+}
+
+.nosotros-contenedor__descripcion {
+	height: 100%;
+	grid-column: span 2;
+	align-content: center;
+}
+
+/*--- seccion mision --- */
+.mision {
+	background-color: whitesmoke;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.mision-contenedor {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	padding: 1rem;
+	gap: 1rem;
+	width: 100%;
+	height: 100%;
+	padding: 1rem;
+}
+
+.mision__titulo {
+	padding: 1rem;
+}
+
+.mision-contenedor__imagen {
+	grid-column: span 1;
+	grid-row: span 2;
+	width: 100%;
+	height: 50vh;
+}
+
+.mision-contenedor__descripcion {
+	height: 100%;
+	grid-column: span 2;
+	grid-row: span 2;
+	align-content: center;
+}
+
+/* --- seccion vision --- */
+.vision {
+	background-color: whitesmoke;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+
+}
+
+.vision-contenedor {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	padding: 1rem;
+	gap: 1rem;
+	width: 100%;
+	height: 100%;
+	padding: 1rem;
+}
+
+.vision__titulo {
+	padding: 1rem;
+}
+
+.vision-contenedor__imagen {
+	grid-column: span 1;
+	width: 100%;
+	height: 50vh;
+}
+
+.vision-contenedor__descripcion {
+	height: 100%;
+	grid-column: span 2;
+	align-content: center;
 }
