@@ -1,6 +1,19 @@
 $ff:'Courgette', cursive;
 $cf:rgb(228, 220, 220);
 $cf-footer:rgba(255, 255, 255, 0.684);
+
+@mixin MQ-tablet{
+	@media(min-width:768px) and (max-width:1024px){
+		@content;
+	}
+}
+
+@mixin MQ-mobile{
+	@media(max-width:767px){
+		@content;
+	}
+}
+
 * {
 	margin: 0;
 	padding: 0;

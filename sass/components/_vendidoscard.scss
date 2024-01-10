@@ -1,12 +1,12 @@
 .vendidos {
 	width: 100%;
 	padding: 1rem;
-}
 
-.vendidos__titulo {
-	color: green;
-	text-align: center;
-	padding: 1rem;
+	&__titulo {
+		color: green;
+		text-align: center;
+		padding: 1rem;
+	}
 }
 
 .vendidos-contenedor {
@@ -14,38 +14,65 @@
 	flex-direction: row;
 	justify-content: space-around;
 	padding: 1rem;
-	gap: 5rem;
+	gap: 2rem;
 	width: 100%;
 	background-color: white;
-}
 
-.vendidos-contenedor__card {
-	/* margin: 5px 10px; */
-	box-shadow: 0 4px 8px 0 grey, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	width: 100%;
-	padding-top: 5%;
-	padding-left: 5%;
-	padding-right: 5%;
-	flex-grow: 1;
-	border-radius: 2%;
-}
+	@include MQ-tablet {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		// justify-content: space-between;
+		padding: 1.5rem;
+		/* flex-grow: 1; */
+		background-color: white;
+		width: 100%;
+		gap: 2rem;
+	}
+	@include MQ-mobile{
+		display: flex;
+		flex-direction: column;
+		padding: 1rem;
 
-.vendidos-contenedor__imagen {
-	width: 100%;
-	height: auto;
-}
+	}
 
-.vendidos-contenedor__imagen:hover {
-	border: 5px solid green;
-	transform: rotate(-2deg);
-}
+	&__card {
+		/* margin: 5px 10px; */
+		box-shadow: 0 4px 8px 0 grey, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 100%;
+		padding: 2%;
+		flex-grow: 1;
+		border-radius: 2%;
 
-.vendidos-contenedor__descripcion {
-	text-align: center;
-	text-shadow: 1px 1px 1px rgb(75, 73, 73);
-	/* padding: 10px; */
-	width: 100%;
+		@include MQ-tablet{
+			padding: 10%;
+		}
+		@include MQ-mobile{
+			padding: 5%;
+		}
+	}
+
+	&__imagen {
+		width: 100%;
+		height: 100%;
+	}
+
+	&__imagen:hover {
+		border: 5px solid green;
+		transform: rotate(-2deg);
+	}
+
+	&__descripcion {
+		display: flex;
+		text-align: center;
+		// text-shadow: 1px 1px 1px rgb(75, 73, 73);
+		/* padding: 10px; */
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		width: 100%;
+		height: 100%;
+		overflow:hidden;
+	}
 }
