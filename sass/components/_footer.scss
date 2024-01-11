@@ -3,21 +3,49 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	width: 100%;
 }
 
 .footer-contenedor {
 	display: flex;
 	flex-direction: row;
 	gap: 1.5rem;
-	margin: 10px 10px;
+	// margin: 10px 10px;
 	padding: 10px;
 	align-items: start;
 	justify-content: space-between;
+	width: 100%;
+
+	@include MQ-tablet {
+		display: flex;
+		flex-direction: row;
+	}
+
+	@include MQ-mobile {
+		display: flex;
+		flex-direction: column;
+		gap: 0%;
+		margin: 0%;
+		padding: 0%;
+		align-items: center;
+	}
 
 	&__logo {
 		width: 300px;
 		height: 150px;
 		border-radius: 5%;
+
+		@include MQ-mobile {
+			width: 100%;
+			border-radius: 0%;
+		}
+	}
+
+	&__menu {
+
+		@include MQ-mobile {
+			padding: 1rem;
+		}
 	}
 
 	&__lista {
@@ -25,40 +53,75 @@
 		border-style: solid;
 		border-color: black;
 		color: cf-footer;
+
+		@include MQ-mobile {
+			width: 100%;
+			border-style: none;
+			list-style: circle;
+		}
 	}
 
-	&__suscrp {
+	&__suscrip {
+		display: flex;
+		flex-direction: row;
 		color: cf-footer;
+		gap: 1rem;
+		align-items: start;
+		justify-content: space-between;
+
+		@include MQ-tablet {
+			display: flex;
+			flex-direction: column;
+			align-items:normal;
+		}
+
+		@include MQ-mobile {
+			display: flex;
+			flex-direction: column;
+			padding: 1rem;
+		}
 	}
+	 
+	    &__etiqueta{
+			width: 100%;
+		}
+		&__email {
+			color: grey;
+			width: 100%;
+		}
 
-	&__boton {
-		// background-color:indianred;
-		// border-radius: 8px;
-		background-color: #fbeee0;
-		border: 2px solid #422800;
-		border-radius: 30px;
-		box-shadow: #422800 4px 4px 0 0;
-		color: #422800;
-		cursor: pointer;
-		display: inline-block;
-		font-weight: 600;
-		font-size: 18px;
-		padding: 0 18px;
-		line-height: 50px;
-		text-align: center;
-		text-decoration: none;
-		user-select: none;
-		-webkit-user-select: none;
-		touch-action: manipulation;
+		&__boton {
+			// background-color:indianred;
+			// border-radius: 8px;
+			background-color: #fbeee0;
+			border: 1px solid #422800;
+			border-radius: 30px;
+			box-shadow: #422800 4px 4px 0 0;
+			color: #422800;
+			display: inline-block;
+			font-weight: 600;
+			font-size: 15px;
+			padding: 0 10px;
+			line-height: 30px;
+			text-align: center;
+			text-decoration: none;
+			user-select: none;
+			-webkit-user-select: none;
+			touch-action: manipulation;
+			width: 100%;
+		}
 
-		&_boton:hover {
+		&__boton:hover {
 			background-color: #fff;
 		}
+
 		&__boton:active {
 			box-shadow: #422800 2px 2px 0 0;
 			transform: translate(2px, 2px);
 		}
-	}
+	
+
+
 }
 
 .contenedor-redes {
@@ -70,10 +133,27 @@
 	justify-items: center;
 	color: cf-footer;
 	gap: 1rem;
-	padding: 10px;
+	padding: 0.5rem;
+	width: 100%;
 
-	&__imagen {
+	@include MQ-mobile {
+		display: grid;
+		flex-direction: column;
+	}
+    
+	&__img{
+		display: flex;
+		flex-direction: row;
+	
+	}
+    &__imagen {
 		width: 40px;
 		height: 40px;
+
+		@include MQ-mobile {
+			display: flex;
+			flex-direction: row;
+		}
 	}
+
 }
