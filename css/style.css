@@ -887,6 +887,9 @@ body {
   justify-content: space-between;
   width: 100%;
 }
+.nosotros__titulo {
+  padding: 1rem;
+}
 
 .nosotros-contenedor {
   display: grid;
@@ -897,21 +900,38 @@ body {
   height: 100%;
   padding: 1rem;
 }
-
-.nosotros__titulo {
-  padding: 1rem;
+@media (min-width: 768px) and (max-width: 1024px) {
+  .nosotros-contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-
+@media (max-width: 767px) {
+  .nosotros-contenedor {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .nosotros-contenedor__imagen {
   grid-column: span 1;
   width: 100%;
-  height: 50vh;
+  height: 100%;
 }
-
+@media (min-width: 768px) and (max-width: 1024px) {
+  .nosotros-contenedor__imagen {
+    grid-column: span 1;
+  }
+}
 .nosotros-contenedor__descripcion {
   height: 100%;
   grid-column: span 2;
   align-content: center;
+  overflow: hidden;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .nosotros-contenedor__descripcion {
+    grid-column: span 1;
+  }
 }
 
 /*--- seccion mision --- */
@@ -921,6 +941,9 @@ body {
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
+}
+.mision__titulo {
+  padding: 1rem;
 }
 
 .mision-contenedor {
@@ -933,23 +956,40 @@ body {
   height: 100%;
   padding: 1rem;
 }
-
-.mision__titulo {
-  padding: 1rem;
+@media (min-width: 768px) and (max-width: 1024px) {
+  .mision-contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-
+@media (max-width: 767px) {
+  .mision-contenedor {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .mision-contenedor__imagen {
   grid-column: span 1;
   grid-row: span 2;
   width: 100%;
   height: 50vh;
 }
-
+@media (min-width: 768px) and (max-width: 1024px) {
+  .mision-contenedor__imagen {
+    grid-column: span 1;
+  }
+}
 .mision-contenedor__descripcion {
   height: 100%;
   grid-column: span 2;
   grid-row: span 2;
   align-content: center;
+  overflow: hidden;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .mision-contenedor__descripcion {
+    grid-column: span 1;
+  }
 }
 
 /* --- seccion vision --- */
@@ -959,6 +999,9 @@ body {
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
+}
+.vision__titulo {
+  padding: 1rem;
 }
 
 .vision-contenedor {
@@ -970,21 +1013,38 @@ body {
   height: 100%;
   padding: 1rem;
 }
-
-.vision__titulo {
-  padding: 1rem;
+@media (min-width: 768px) and (max-width: 1024px) {
+  .vision-contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-
+@media (max-width: 767px) {
+  .vision-contenedor {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .vision-contenedor__imagen {
   grid-column: span 1;
   width: 100%;
   height: 50vh;
 }
-
+@media (min-width: 768px) and (max-width: 1024px) {
+  .vision-contenedor__imagen {
+    grid-column: span 1;
+  }
+}
 .vision-contenedor__descripcion {
   height: 100%;
   grid-column: span 2;
   align-content: center;
+  overflow: hidden;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .vision-contenedor__descripcion {
+    grid-column: span 1;
+  }
 }
 
 * {
