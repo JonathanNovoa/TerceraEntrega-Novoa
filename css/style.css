@@ -1047,16 +1047,43 @@ body {
   }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Courgette", cursive;
+.formulario {
+  width: 500px;
+  background: #888c90;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-radius: 4px;
+  color: white;
+  box-shadow: 7px 13px 37px #000;
+}
+.formulario__boton {
+  width: 100%;
+  background: #1f53c5;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
 }
 
-body {
-  background-color: rgb(228, 220, 220);
-  font-family: "Courgette", cursive;
+.titulo {
+  margin-top: 50px;
+  text-align: center;
+  font-size: xx-large;
+}
+
+.formulario-nombre__caja {
+  width: 100%;
+}
+
+.formulario-correo__caja {
+  width: 100%;
+}
+
+.formulario-mensaje__area {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

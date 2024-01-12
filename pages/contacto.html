@@ -40,24 +40,25 @@
         <!-- Comienzo tarjeta de imagenes con ofertas -->
     </main>
     <!-- ---------------------------------------------------------------------------------------------- -->
-    <h1>Formulario de contacto</h1>
-    <form action="#">
-        <div>
-            <label for="nombre-formulario">Nombre</label>
-            <input type="text" id="nombre-formulario">
+    <h1 class="titulo">Formulario de contacto</h1>
+    <form class="formulario" action="#">
+        
+        <div class="formulario-nombre">
+            <label class="formulario-nombre__etiqueta" for="nombre-formulario">Nombre</label><br>
+            <input class="formulario-nombre__caja" type="text" id="nombre-formulario" placeholder="Ingrese su nombre">
         </div>
         <br>
-        <div>
-            <label for="correo-formulario">Correo</label>
-            <input type="email" id="correo-formulario">
+        <div class="formulario-correo">
+            <label class="formulario-correo__etiqueta" for="correo-formulario">Correo</label><br>
+            <input class="formulario-correo__caja" type="email" id="correo-formulario" placeholder="Ingrese su correo">
         </div>
         <br>
-        <div>
-            <label for="mensaje-formulario">Escriba su mensaje</label><br>
-            <textarea name="" id="mensaje-formulario" cols="30" rows="10"></textarea>
+        <div class="formulario-mensaje">
+            <label class="formulario-mensaje__etiqueta" for="mensaje-formulario">Escriba su mensaje</label><br>
+            <textarea class="formulario-mensaje__area" name="" id="mensaje-formulario" cols="30" rows="10"></textarea>
         </div>
         <br>
-        <input type="submit" value="Enviar">
+        <input class="formulario__boton" type="submit" value="Enviar">
     </form>
 
     <!-- ---------------------------------------------------------------------------------------------- -->
