@@ -69,6 +69,9 @@ body {
   color: white;
   text-decoration: none;
 }
+.banner__link:hover {
+  border-bottom: 3px solid white;
+}
 
 /* ---- Comienzo portada */
 .portada {
@@ -279,6 +282,10 @@ body {
   color: red;
   text-align: center;
   padding: 1rem;
+  background: linear-gradient(90deg, rgb(138, 114, 114), #9d130e);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .ofertas-contenedor {
@@ -332,6 +339,21 @@ body {
 .ofertas-contenedor__imagen {
   width: 100%;
   height: 100%;
+  position: relative;
+}
+.ofertas-contenedor__imagen-img {
+  width: 100%;
+  height: 100%;
+}
+.ofertas-contenedor__imagen-text {
+  position: absolute;
+  color: white;
+  background-color: red;
+  padding: 5px;
+  top: 1px;
+  left: 1px;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
 }
 .ofertas-contenedor__imagen:hover {
   border: 5px solid red;
@@ -418,6 +440,19 @@ body {
 .vendidos-contenedor__imagen {
   width: 100%;
   height: 100%;
+  position: relative;
+}
+.vendidos-contenedor__imagen-img {
+  width: 100%;
+  height: 100%;
+}
+.vendidos-contenedor__imagen-text {
+  position: absolute;
+  color: white;
+  background-color: green;
+  padding: 5px;
+  top: 1px;
+  left: 1px;
 }
 .vendidos-contenedor__imagen:hover {
   border: 5px solid green;
@@ -502,7 +537,20 @@ body {
 }
 .contenedor-productos__imagen {
   width: 100%;
-  height: auto;
+  height: 100%;
+  position: relative;
+}
+.contenedor-productos__imagen-img {
+  width: 100%;
+  height: 100%;
+}
+.contenedor-productos__imagen-text {
+  position: absolute;
+  color: white;
+  background-color: #3cdcff;
+  padding: 5px;
+  top: 1px;
+  left: 1px;
 }
 .contenedor-productos__imagen:hover {
   border: 3px solid blue;
@@ -535,6 +583,10 @@ body {
   color: red;
   text-align: center;
   padding: 1rem;
+  background: linear-gradient(90deg, rgb(138, 114, 114), #9d130e);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .ofertas-contenedor {
@@ -588,6 +640,21 @@ body {
 .ofertas-contenedor__imagen {
   width: 100%;
   height: 100%;
+  position: relative;
+}
+.ofertas-contenedor__imagen-img {
+  width: 100%;
+  height: 100%;
+}
+.ofertas-contenedor__imagen-text {
+  position: absolute;
+  color: white;
+  background-color: red;
+  padding: 5px;
+  top: 1px;
+  left: 1px;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
 }
 .ofertas-contenedor__imagen:hover {
   border: 5px solid red;
@@ -674,6 +741,19 @@ body {
 .vendidos-contenedor__imagen {
   width: 100%;
   height: 100%;
+  position: relative;
+}
+.vendidos-contenedor__imagen-img {
+  width: 100%;
+  height: 100%;
+}
+.vendidos-contenedor__imagen-text {
+  position: absolute;
+  color: white;
+  background-color: green;
+  padding: 5px;
+  top: 1px;
+  left: 1px;
 }
 .vendidos-contenedor__imagen:hover {
   border: 5px solid green;
@@ -758,7 +838,20 @@ body {
 }
 .contenedor-productos__imagen {
   width: 100%;
-  height: auto;
+  height: 100%;
+  position: relative;
+}
+.contenedor-productos__imagen-img {
+  width: 100%;
+  height: 100%;
+}
+.contenedor-productos__imagen-text {
+  position: absolute;
+  color: white;
+  background-color: #3cdcff;
+  padding: 5px;
+  top: 1px;
+  left: 1px;
 }
 .contenedor-productos__imagen:hover {
   border: 3px solid blue;
@@ -844,6 +937,19 @@ body {
 .vendidos-contenedor__imagen {
   width: 100%;
   height: 100%;
+  position: relative;
+}
+.vendidos-contenedor__imagen-img {
+  width: 100%;
+  height: 100%;
+}
+.vendidos-contenedor__imagen-text {
+  position: absolute;
+  color: white;
+  background-color: green;
+  padding: 5px;
+  top: 1px;
+  left: 1px;
 }
 .vendidos-contenedor__imagen:hover {
   border: 5px solid green;
@@ -928,7 +1034,20 @@ body {
 }
 .contenedor-productos__imagen {
   width: 100%;
-  height: auto;
+  height: 100%;
+  position: relative;
+}
+.contenedor-productos__imagen-img {
+  width: 100%;
+  height: 100%;
+}
+.contenedor-productos__imagen-text {
+  position: absolute;
+  color: white;
+  background-color: #3cdcff;
+  padding: 5px;
+  top: 1px;
+  left: 1px;
 }
 .contenedor-productos__imagen:hover {
   border: 3px solid blue;
@@ -1145,7 +1264,10 @@ body {
   margin-top: 50px;
   text-align: center;
   font-size: xx-large;
-  text-shadow: 1.5px 1.5px blue;
+  background: linear-gradient(90deg, rgb(138, 114, 114), #1106ee);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .formulario-nombre__caja {

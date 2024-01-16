@@ -6,7 +6,7 @@
 	align-items: center;
 	justify-content: space-between;
 	gap: 1rem;
-
+    
 	@include MQ-mobile{
 		display: grid;
 	    grid-template-columns: repeat(3, 1fr);
@@ -53,9 +53,14 @@
 			grid-column: span 1;
 		}
 	}
-
+    
 	&__link {
 		color: white;
 		text-decoration: none;
 	}
+	
+	&__link:hover{
+		border-bottom: 3px solid white;
+	}
+
 }
