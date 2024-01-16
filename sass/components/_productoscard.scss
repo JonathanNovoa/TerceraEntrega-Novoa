@@ -6,6 +6,7 @@
 		color: black;
 		text-align: center;
 		padding: 1rem;
+		font-family: $ff;
 	}
 }
 
@@ -75,7 +76,7 @@
 	}
 
 	&__imagen:hover {
-		border: 3px solid blue;
+		border: 3px solid #3cdcff;
 		transform: scale(1.05);
 	}
 

@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: ff;
 }
 
 body {
@@ -281,6 +280,7 @@ body {
 .ofertas__titulo {
   color: red;
   text-align: center;
+  font-family: "Courgette", cursive;
   padding: 1rem;
   background: linear-gradient(90deg, rgb(138, 114, 114), #9d130e);
   -webkit-background-clip: text;
@@ -387,6 +387,7 @@ body {
   color: green;
   text-align: center;
   padding: 1rem;
+  font-family: "Courgette", cursive;
 }
 
 .vendidos-contenedor {
@@ -486,6 +487,7 @@ body {
   color: black;
   text-align: center;
   padding: 1rem;
+  font-family: "Courgette", cursive;
 }
 
 .contenedor-productos {
@@ -553,7 +555,7 @@ body {
   left: 1px;
 }
 .contenedor-productos__imagen:hover {
-  border: 3px solid blue;
+  border: 3px solid #3cdcff;
   transform: scale(1.05);
 }
 .contenedor-productos__descripcion {
@@ -582,6 +584,7 @@ body {
 .ofertas__titulo {
   color: red;
   text-align: center;
+  font-family: "Courgette", cursive;
   padding: 1rem;
   background: linear-gradient(90deg, rgb(138, 114, 114), #9d130e);
   -webkit-background-clip: text;
@@ -688,6 +691,7 @@ body {
   color: green;
   text-align: center;
   padding: 1rem;
+  font-family: "Courgette", cursive;
 }
 
 .vendidos-contenedor {
@@ -787,6 +791,7 @@ body {
   color: black;
   text-align: center;
   padding: 1rem;
+  font-family: "Courgette", cursive;
 }
 
 .contenedor-productos {
@@ -854,7 +859,7 @@ body {
   left: 1px;
 }
 .contenedor-productos__imagen:hover {
-  border: 3px solid blue;
+  border: 3px solid #3cdcff;
   transform: scale(1.05);
 }
 .contenedor-productos__descripcion {
@@ -884,6 +889,7 @@ body {
   color: green;
   text-align: center;
   padding: 1rem;
+  font-family: "Courgette", cursive;
 }
 
 .vendidos-contenedor {
@@ -983,6 +989,7 @@ body {
   color: black;
   text-align: center;
   padding: 1rem;
+  font-family: "Courgette", cursive;
 }
 
 .contenedor-productos {
@@ -1050,7 +1057,7 @@ body {
   left: 1px;
 }
 .contenedor-productos__imagen:hover {
-  border: 3px solid blue;
+  border: 3px solid #3cdcff;
   transform: scale(1.05);
 }
 .contenedor-productos__descripcion {
