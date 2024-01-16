@@ -35,13 +35,13 @@
 	}
 
 	&__card {
-		box-shadow: 0 4px 8px 0 grey, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		box-shadow: 0 4px 8px 0 grey, 0 6px 20px 0 rgba(35, 12, 99, 0.19);
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		width: 100%;
 		flex-grow: 1;
-		padding: 2%;
+		padding: 5%;
 		border-radius: 2%;
 
 		@include MQ-tablet{
@@ -58,7 +58,7 @@
 	}
 
 	&__imagen:hover {
-		border: 3px solid black;
+		border: 3px solid blue;
 		transform: scale(1.05);
 	}
 
@@ -73,4 +73,14 @@
 		overflow:hidden;
 	}
 
+	&__boton {
+		width: 100%;
+		background: #1f53c5;
+		border: none;
+		padding: 12px;
+		color: white;
+		// margin: 16px 0;
+		font-size: 16px;
+		border-radius: 25px;
+	}
 }

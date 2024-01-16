@@ -75,4 +75,15 @@
 		height: 100%;
 		overflow:hidden;
 	}
+
+	&__boton{
+		width: 100%;
+		background: green;
+		border: none;
+		padding: 12px;
+		color: white;
+		// margin: 16px 0;
+		font-size: 16px;
+		border-radius: 25px;
+	}
 }
