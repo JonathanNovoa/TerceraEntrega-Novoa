@@ -9,6 +9,11 @@
 	color: white;
 	box-shadow: 7px 13px 37px #000;
 
+	@include MQ-mobile {
+		width: 90%;
+		border: 30px;
+	}
+
 	&__boton {
 		width: 100%;
 		background: #1f53c5;
@@ -18,33 +23,33 @@
 		margin: 16px 0;
 		font-size: 16px;
 	}
-
-	
 }
 
-.titulo{
+.titulo {
 	margin-top: 50px;
 	text-align: center;
-	font-size:xx-large;
-	background: linear-gradient(90deg,rgb(138, 114, 114),#1106ee);
+	font-size: xx-large;
+	background: linear-gradient(90deg, rgb(138, 114, 114), #1106ee);
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
+
 }
-.formulario-nombre{
-	&__caja{
+
+.formulario-nombre {
+	&__caja {
 		width: 100%;
 	}
 }
 
-.formulario-correo{
-	&__caja{
+.formulario-correo {
+	&__caja {
 		width: 100%;
 	}
 }
 
-.formulario-mensaje{
-	&__area{
+.formulario-mensaje {
+	&__area {
 		width: 100%;
 	}
 }

@@ -9,7 +9,11 @@
 		padding: 1rem;
 	}
 }
-
+.nosotros-titulo{
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
 .nosotros-contenedor {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);

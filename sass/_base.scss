@@ -1,21 +1,21 @@
-$ff:'Courgette', cursive;
+$ff: IBM Plex Sans, elvetica;
 $fw: bolder;
-$cf:rgb(228, 220, 220);
-$cf-footer:rgba(255, 255, 255, 0.684);
+$cf: rgb(228, 220, 220);
+$cf-footer: rgba(255, 255, 255, 0.684);
 
-@mixin MQ-tablet{
-	@media(min-width:768px) and (max-width:1024px){
+@mixin MQ-tablet {
+	@media(min-width:768px) and (max-width:1024px) {
 		@content;
 	}
 }
 
-@mixin MQ-mobile{
-	@media(max-width:767px){
+@mixin MQ-mobile {
+	@media(max-width:767px) {
 		@content;
 	}
 }
 
-*{
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;

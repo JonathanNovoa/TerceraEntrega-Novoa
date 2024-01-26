@@ -1,6 +1,7 @@
 .vendidos {
 	width: 100%;
 	padding: 1rem;
+	background-color: rgb(242, 247, 245);
 
 	&__titulo {
 		color: green;
@@ -94,6 +95,7 @@
 
 	&__boton{
 		width: 100%;
+		margin-top: 5%;
 		background: green;
 		border: none;
 		padding: 12px;
@@ -102,5 +104,17 @@
 		font-size: 16px;
 		border-radius: 25px;
 		font-weight: $fw;
+	}
+
+	&__marca{
+		font-weight: bold;
+	}
+	&__desc{
+		color: grey;
+	}
+	&__precio {
+		color: red;
+		font-size: 1.2em;
+		font-weight: bold;
 	}
 }
