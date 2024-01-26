@@ -90,12 +90,21 @@ body {
     width: 100%;
   }
 }
+.portada__nombre {
+  display: flex;
+  justify-content: center;
+  color: #efb810;
+  text-shadow: 5px 5px 2px black;
+  font-size: 60px;
+  /* text-align: center; */
+  align-items: center;
+}
 .portada__titulo {
   display: flex;
   justify-content: center;
   color: #efb810;
   text-shadow: 5px 5px 2px black;
-  font-size: 80px;
+  font-size: 50px;
   /* text-align: center; */
   align-items: center;
 }
@@ -339,6 +348,7 @@ body {
   }
 }
 .ofertas {
+  margin-top: 1rem;
   padding: 1rem;
   width: 100%;
   background-color: rgb(217, 247, 247);
@@ -352,6 +362,12 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.productos-titulo {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .ofertas-contenedor {
@@ -749,6 +765,7 @@ body {
 }
 
 .ofertas {
+  margin-top: 1rem;
   padding: 1rem;
   width: 100%;
   background-color: rgb(217, 247, 247);
@@ -762,6 +779,12 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.productos-titulo {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .ofertas-contenedor {
@@ -1196,6 +1219,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
+  margin-top: 1rem;
 }
 .nosotros__titulo {
   padding: 1rem;
