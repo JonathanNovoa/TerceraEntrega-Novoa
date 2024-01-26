@@ -764,6 +764,12 @@ body {
   }
 }
 
+.home-titulo {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .ofertas {
   margin-top: 1rem;
   padding: 1rem;
