@@ -24,6 +24,9 @@
 		font-size: 60px;
 		/* text-align: center; */
 		align-items: center;
+		@include MQ-mobile {
+			font-size: 50px;
+		}
 	}
 
 	&__titulo {
@@ -49,11 +52,12 @@
 			font-size: 65px;
 			display: flex;
 			flex-direction: row;
-			align-items: center;
+			justify-content: center;
 			align-items: center;
 			text-align: center;
 			width: 100%;
 			padding: 1rem;
+			font-size: 40px;
 		}
 	}
 }

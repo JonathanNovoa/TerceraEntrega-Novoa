@@ -1,7 +1,9 @@
 $ff: IBM Plex Sans, elvetica;
+$fft: Georgia, "Times New Roman", Times, serif;
 $fw: bolder;
 $cf: rgb(228, 220, 220);
 $cf-footer: rgba(255, 255, 255, 0.684);
+$ct:#1787DC;
 
 @mixin MQ-tablet {
 	@media(min-width:768px) and (max-width:1024px) {
