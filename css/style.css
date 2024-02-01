@@ -1189,7 +1189,7 @@ body {
   padding: 1rem;
   gap: 1rem;
   width: 100%;
-  height: auto;
+  height: 100%;
   padding: 1rem;
   background-color: rgb(247, 244, 244);
   margin-bottom: 1rem;
@@ -1229,7 +1229,7 @@ body {
   }
 }
 .marcas-contenedor__descripcion {
-  height: 100%;
+  height: auto;
   grid-column: span 1;
   align-content: center;
   overflow: hidden;
