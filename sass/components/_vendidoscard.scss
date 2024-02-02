@@ -4,8 +4,8 @@
 	background-color: rgb(242, 247, 245);
 
 	&__titulo {
-		color: green;
-		text-align: center;
+		color: $ct;
+		text-align: left;
 		padding: 1rem;
 		font-family: $ff;
 	}

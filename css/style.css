@@ -82,13 +82,13 @@ body {
 /* ---- Comienzo portada */
 .portada {
   width: 100%;
-  height: 550px;
+  height: 600px;
   background-size: 100% 100%;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../image/portada2.jpg");
+  background-image: url("../image/portadanew.jpg");
 }
 .portada__imagen {
   width: 100%;
@@ -96,7 +96,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
 }
 .portada__info {
   z-index: 1;
@@ -376,25 +376,13 @@ body {
   margin-top: 1rem;
   padding: 1rem;
   width: 100%;
-  background-color: rgb(217, 247, 247);
+  height: 100%;
 }
 .ofertas__titulo {
-  color: red;
-  text-align: center;
+  color: #060606;
+  text-align: left;
   font-family: IBM Plex Sans, elvetica;
   padding: 1rem;
-  background: linear-gradient(90deg, rgb(138, 114, 114), #9d130e);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.productos-titulo {
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: #1787DC;
 }
 
 .ofertas-contenedor {
@@ -507,8 +495,8 @@ body {
   background-color: rgb(242, 247, 245);
 }
 .vendidos__titulo {
-  color: green;
-  text-align: center;
+  color: #060606;
+  text-align: left;
   padding: 1rem;
   font-family: IBM Plex Sans, elvetica;
 }
@@ -618,11 +606,10 @@ body {
 .productos {
   width: 100%;
   padding: 1rem;
-  background-color: bisque;
 }
 .productos__titulo {
-  color: black;
-  text-align: center;
+  color: #060606;
+  text-align: left;
   padding: 1rem;
   font-family: IBM Plex Sans, elvetica;
 }
@@ -732,11 +719,7 @@ body {
   grid-template-rows: repeat(1, 1fr);
   width: 100%;
   gap: 1rem;
-}
-
-.marcasdes__titulo {
   padding: 1rem;
-  text-align: center;
 }
 
 .marcasdes-contenedor {
@@ -747,6 +730,12 @@ body {
   height: auto;
   background-color: rgb(247, 244, 244);
   margin-bottom: 1rem;
+  padding: 1rem;
+}
+.marcasdes-contenedor .marcasdes__titulo {
+  padding: 1rem;
+  text-align: left;
+  color: #060606;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .marcasdes-contenedor {
@@ -795,33 +784,23 @@ body {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  padding-left: 20px;
   font-family: Georgia, "Times New Roman", Times, serif;
-  color: #1787DC;
+  font-size: xx-large;
+  color: #060606;
 }
 
 .ofertas {
   margin-top: 1rem;
   padding: 1rem;
   width: 100%;
-  background-color: rgb(217, 247, 247);
+  height: 100%;
 }
 .ofertas__titulo {
-  color: red;
-  text-align: center;
+  color: #060606;
+  text-align: left;
   font-family: IBM Plex Sans, elvetica;
   padding: 1rem;
-  background: linear-gradient(90deg, rgb(138, 114, 114), #9d130e);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.productos-titulo {
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: #1787DC;
 }
 
 .ofertas-contenedor {
@@ -934,8 +913,8 @@ body {
   background-color: rgb(242, 247, 245);
 }
 .vendidos__titulo {
-  color: green;
-  text-align: center;
+  color: #060606;
+  text-align: left;
   padding: 1rem;
   font-family: IBM Plex Sans, elvetica;
 }
@@ -1045,11 +1024,10 @@ body {
 .productos {
   width: 100%;
   padding: 1rem;
-  background-color: bisque;
 }
 .productos__titulo {
-  color: black;
-  text-align: center;
+  color: #060606;
+  text-align: left;
   padding: 1rem;
   font-family: IBM Plex Sans, elvetica;
 }
@@ -1154,6 +1132,16 @@ body {
   font-weight: bold;
 }
 
+.productos-titulo {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: xx-large;
+  color: rgb(16, 16, 16);
+}
+
 .marcas {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1180,7 +1168,7 @@ body {
   padding: 1rem;
   text-align: center;
   font-family: Georgia, "Times New Roman", Times, serif;
-  color: #1787DC;
+  color: #060606;
 }
 
 .marcas-contenedor {
@@ -1269,7 +1257,7 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
   font-family: Georgia, "Times New Roman", Times, serif;
-  color: #1787DC;
+  color: #060606;
 }
 
 .nosotros-contenedor {
